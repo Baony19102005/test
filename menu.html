@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwi Company Website</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Phần Header A: Chứa Menu -->
+        <header id="part-a">
+            <nav class="main-menu">
+                <ul>
+                    <!-- THÊM ID VÀO ĐÂY -->
+                    <li><a href="#" id="about-me-btn">About me</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Form & Javascript</a>
+                        <ul class="dropdown-content">
+                            <!-- VÀ THÊM ID VÀO ĐÂY -->
+                            <li><a href="#" id="products-btn">Products</a></li>
+                            <li><a href="#" id="employees-btn">Employees</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">API and External</a>
+                        <ul class="dropdown-content">
+                            <!-- Thêm id="weather-btn" vào đây -->
+                            <li><a href="#" id="weather-btn">Weather API</a></li>
+                            <!-- Thêm id="rss-btn" vào đây -->
+                            <li><a href="#" id="rss-btn">RSS</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" id="login-logout-btn">Login/Logout</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Phần bên trái B -->
+        <aside id="part-b">
+            <h3>Kết quả Vietlott</h3>
+            <!-- Nội dung Vietlott sẽ được JS chèn vào đây -->
+            <div id="vietlott-container"></div>
+        </aside>
+
+        <!-- ... (phần C giữ nguyên) ... -->
+
+        <!-- TÌM VÀ THAY THẾ NỘI DUNG CỦA PART D -->
+        <aside id="part-d">
+            <h3>Thông báo</h3>
+            <!-- Yêu cầu Q9: Thêm marquee vào đây -->
+            <marquee direction="up" behavior="scroll" scrollamount="2" loop="infinite" class="declaration-marquee">
+                I declare that all of these solutions are my own and not copied from anyone in this class
+            </marquee>
+        </aside>
+
+        <!-- Phần chính giữa C -->
+        <main id="part-c">
+            <h1>Welcome to Kiwi Company!</h1>
+            <p>Đây là khu vực hiển thị nội dung chính của trang web. Tất cả các nội dung từ menu sẽ được hiển thị ở đây.
+            </p>
+        </main>
+
+        <!-- Phần Footer E -->
+        <footer id="part-e">
+            <!-- JavaScript sẽ chèn nội dung vào đây -->
+            <p id="footer-info"></p>
+        </footer>
+    </div>
+    <script src="../JS/js.js"></script> <!-- Giả sử file script.js nằm cùng thư mục với stylesheet.css -->
+</body>
+
+</html>
